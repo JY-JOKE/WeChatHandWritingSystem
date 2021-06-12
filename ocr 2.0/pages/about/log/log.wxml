@@ -1,0 +1,31 @@
+<!--pages/about/log/log.wxml-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">日志</view></cu-custom>
+<view class="cu-timeline">
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v2.1</view>
+        <view class="cu-tag line-white">2021/6/9</view>
+      </view>
+      <view class="margin-top-sm text-content">2.1版本修复了网络不良时不能返回值的bug</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v2.0</view>
+        <view class="cu-tag line-white">2021/6/5</view>
+      </view>
+      <view class="margin-top-sm text-content">2.0版本优化图形界面</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0</view>
+        <view class="cu-tag line-white">2021/5/29</view>
+      </view>
+      <view class="margin-top-sm text-content">1.0版本实现基本功能</view>
+    </view>
+  </view>
+</view>

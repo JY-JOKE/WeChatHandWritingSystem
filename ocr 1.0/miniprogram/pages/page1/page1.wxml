@@ -1,0 +1,17 @@
+<!--pages/page1/page1.wxml-->
+<view class="container">
+  <text>\n\n\n</text>
+  <image  src="../../images/ocr.png" mode="aspectFill">  
+     </image>  
+  <text>\n</text>
+  <view class="camera">
+    <button class='btn1' bindtap="getLocalImage">
+      <image class='btnImg' src='../../images/upload.png'></image>
+      <view>上传图片</view>
+    </button>   
+    <text>\n</text>
+    <view class='center'>
+      <text wx:if="{{display_result}}">识别结果：{{result}}</text>
+    </view>
+  </view>
+</view>

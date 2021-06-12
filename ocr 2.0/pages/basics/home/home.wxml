@@ -1,0 +1,18 @@
+<view>
+  <image src='/images/bg.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
+  <text>\n\n\n\n\n</text>
+  <view class="pre-list">
+    <view class='nav-list'>
+      <navigator class="nav-li bg-blue" url="/pages/basics/result/result">
+        <view class="nav-title">拍照</view>
+        <view class="nav-name">photograph</view>
+        <text class='cuIcon-camerafill'></text>
+      </navigator>
+      <navigator class="nav-li bg-purple" url="/pages/basics/result/result" >
+        <view class="nav-title">上传</view>
+        <view class="nav-name">upload</view>
+        <text class='cuIcon-upload'></text>
+      </navigator>
+    </view>
+  </view>
+</view>

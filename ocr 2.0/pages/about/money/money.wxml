@@ -1,0 +1,7 @@
+<!--pages/about/money/money.wxml-->
+<!--pages/about/about/about.wxml-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">赞赏</view></cu-custom>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>谢谢老板</view>
+  <image src="/images/QRcode.jpg" mode="aspectFit"></image>
+</view>

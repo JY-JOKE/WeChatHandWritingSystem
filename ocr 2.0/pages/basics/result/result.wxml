@@ -1,0 +1,33 @@
+<!--pages/basics/result/result.wxml-->
+<view bindtap="getLocalImage"></view>
+<cu-custom wx:if="{{loading}}" bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">加载</view>
+  <view class="action" slot="right">
+    <view class="cu-load load-icon {{!isLoad?'loading':'over'}}"></view>
+  </view>
+</cu-custom>
+
+<cu-custom wx:elif="{{suc && !loading}}" bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">识别完成</view>
+</cu-custom>
+
+<cu-custom wx:elif="{{!suc && !loading}}" bgColor="bg-gradual-red" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">错误</view>
+</cu-custom>
+
+<view class='margin-xl bg-white padding-xl radius shadow-lg' wx:if="{{suc && !loading}}">
+  <view class='text-content'>
+    <view class='margin-top-sm'>
+      <!--<text selectable="true">{{result}}</text>-->
+      <view wx:for="{{result_array}}">
+        <text selectable="true">{{item}}</text>
+      </view>
+      <view style="width: 5px;height: 40px;display: inline;float: right;padding-top: -10px;padding-right: -40px;">
+        <text bindtap="copy" class='cuIcon-copy'></text>
+      </view>
+    </view>
+  </view>
+</view>

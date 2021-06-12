@@ -1,0 +1,14 @@
+<!--pages/about/about/about.wxml-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">关于</view></cu-custom>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于OCR小程序</view>
+  <view class='text-content'>
+    <view>Hi！欢迎使用本OCR文字识别小程序！</view>
+    <view class='margin-top-sm'>这是重庆大学明月科创班软件设计课的作业^_^</view>
+    <view class='margin-top-sm'>鉴于目前市面上的手写识别小程序存在广告多，识别不准确，收费高昂，隐私易泄露，需单
+    独下载 APP 等问题，我们制作了一款无广告，基于腾讯云识别的微信小程序，相比于其他
+    的手写识别的应用，我们有以下优势：1.微信小程序，随时随地，便捷使用。2.基于腾讯云
+    计算，安全稳定。3.无广告，不收费。</view>
+    <view class='margin-top-sm'>更多功能敬请期待！</view>
+  </view>
+</view>
